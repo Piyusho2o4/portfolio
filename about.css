@@ -1,0 +1,287 @@
+/* ===== Reset and Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1e1e1e;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: white;
+}
+
+/* ===== Hero Section (Left + Right Layout) ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: black;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* ===== About Page Section ===== */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #121212;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 700px;
+  background: #181818;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 40px 32px;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  color: orange;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 24px 0 0 0;
+  text-align: left;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: #eee;
+  line-height: 1.6;
+  transition: color 0.2s;
+}
+
+.about-list li:hover {
+  color: orange;
+}
+
+.about-bullet {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, orange, #ff9800);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(255,140,0,0.18);
+  content: '';
+  display: inline-block;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(to top, #000, #2b1d13);
+  padding: 40px 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content h2 {
+  color: orange;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.footer-content .name {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: orange;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-socials {
+  margin: 20px 0;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff3;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background-color: orange;
+  color: #000;
+}
+
+.copyright {
+  margin-top: 20px;
+  color: #bbb;
+  font-size: 14px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1e1e1e;
+}
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: white;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,158 @@
+/* ===== Reset and Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1e1e1e;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: white;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #121212;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* === Contact Info === */
+.contact-info {
+  margin-bottom: 24px;
+  color: #ccc;
+  font-size: 16px;
+}
+.contact-info strong {
+  color: orange;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid orange;
+}
+
+.contact-form button {
+  margin-top: 8px;
+}
+
+.contact-socials {
+  margin-top: 10px;
+}
+
+.contact-socials a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff3;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.contact-socials a:hover {
+  background-color: orange;
+  color: #000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 4%;
+  }
+  .contact-section {
+    padding: 24px 4px;
+    height: auto;
+  }
+  .contact-container {
+    max-width: 100%;
+  }
+}
